@@ -1,0 +1,302 @@
+:root {
+  --black: #000;
+  --white: #fff;
+  --grey: #555;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: var(--white);
+}
+body {
+  background: #111;
+ 
+}
+header {
+  background: #000000f5;
+  backdrop-filter: blur(0.1pc);
+  border-bottom: 0.1pc solid rgba(250, 250, 250, 0.2);
+  height: 5pc;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav {
+  float: left;
+  align-items: center;
+  display: flex;
+  gap: 2pc;
+}
+nav ul {
+  list-style: none;
+  overflow: hidden;
+}
+nav ul li {
+  float: left;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+nav ul li a {
+  display: flex;
+  padding: 1pc;
+  text-decoration: none;
+}
+.sectionInit {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url(https://media-rockstargames-com.akamaized.net/tina-uploads/tina-modules/3871/07edb091bb329145ee3f3f01476adb40acc6457b.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.Carta {
+  display: flex;
+  height: 100vh;
+  width: 70%;
+  gap: 2pc;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.85),
+    rgba(0, 0, 0, 0.7) 35%,
+    transparent 65%
+  );
+  padding-left: 5pc;
+}
+.Carta h2 {
+  font-weight: 1000;
+}
+.btn {
+  padding: 1.3pc 3pc 1.3pc 3pc;
+  font-weight: 600;
+  font-size: 1.2pc;
+  border-radius: 0.3pc;
+  border: 0.1pc solid#fff;
+  background-color: rgb(172, 72, 72, 0.009);
+}
+.btn:hover {
+  background-color: white;
+  color: #000;
+  transition: all 0.4s ease-in-out;
+}
+.sectionWelcome {
+  background-image: url(https://media-rockstargames-com.akamaized.net/tina-uploads/tina-modules/gta-v/911bff9fca5209b94dd22bcba795eefdd4b71993.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 260vh;
+  background-size: cover;
+  background-position: center;
+}
+.Grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  font-size: 1.7pc;
+  grid-gap: 1pc;
+}
+.Grid p {
+  font-size: 1.4pc;
+}
+.sectionOnline {
+  background-image: url(https://media-rockstargames-com.akamaized.net/tina-uploads/tina-modules/gta-v/047b024f60c6b19ed5a5b785e6e9416c97a99614.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 260vh;
+}
+.GridOnline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+  font-size: 1.7pc;
+  grid-gap: 1pc;
+}
+.GridOnline p {
+  font-size: 1.4pc;
+}
+.sectionActualizaciones {
+  margin: 3pc;
+}
+.sectionActualizaciones h2 {
+  padding: 1pc;
+  font-size: 2.4pc;
+}
+.GridActualizaciones {
+  display: flex;
+  gap: 1.5pc;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+.items:nth-child(1) {
+  background-image: url("https://media-rockstargames-com.akamaized.net/tina-uploads/tina-modules/2a1k4/4efde3b3ce13f6254f61e546d69d445815994b9d.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 15pc;
+  position: relative;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  min-width: 30pc;
+
+}
+.items:nth-child(2) {
+  background-image: url("https://media-rockstargames-com.akamaized.net/tina-uploads/tina-modules/o488o/755958c9510a7e9723ee094b374ba5d9a6bb9b10.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 15pc;
+  min-width: 30pc;
+  position: relative;
+  border: 1px solid transparent;
+  border-radius: 8px;
+}
+.items:hover {
+  border: 1px solid white;
+}
+.UpdatePeople {
+  width: 29pc;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.UpdateLogo {
+  width: 7pc;
+  position: absolute;
+  left: 2pc;
+  top: 50%;
+}
+.items:hover .UpdatePeople {
+  width: 29.5pc;
+}
+.ComprarAhora {
+  border: 0.1pc solid;
+  padding: 0.5pc;
+  border-radius: 0.4pc;
+  font-weight: 700;
+  background-color: #111;
+  display: flex;
+}
+.a1 {
+  font-size: 1pc;
+}
+.LogoR1 {
+  width: 1.8pc;
+}
+.LogoR2 {
+  width: 14pc;
+  border-left: 0.1pc solid rgba(255, 255, 255, 0.2);
+  
+}
+.GTALogo {
+  display: flex;
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/4d580d34037dd454c9fa2bd4c02e5d7a.svg);
+  height: 8pc;
+  width: 8pc;
+  background-repeat: no-repeat;
+  justify-content: left;
+  align-items: left;
+  display: flex;
+}
+.GridLogo {
+  width: 100%;
+  padding: 1pc;
+}
+.ImgWelcome {
+  height: 57pc;
+}
+.Updates {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+.Updates img {
+  width: 50pc;
+  border-radius: 1pc;
+}
+.UpdatesContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  row-gap: 1pc;
+}
+.txtContUpt {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  flex-direction: column;
+}
+.Search {
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/902006563577748c7d58ac9c2bf5e6df.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1.57pc;
+  height: 1.57pc;
+}
+.ImgInit {
+  display: flex;
+  gap: 2pc;
+}
+.ImgInit {
+  height: 8pc;
+}
+.txtInit {
+  width: 70%;
+  display: grid;
+  grid-gap: 1pc;
+}
+.txt_1 {
+  font-size: 1.9pc;
+  font-weight: 1000;
+}
+.txt_2 {
+  font-size: 1.2pc;
+  font-weight: 500;
+}
+.btnInit {
+  display: flex;
+  gap: 2pc;
+}
+.ImgOnline {
+  height: 60pc;
+}
+.Online_1 {
+  width: 100%;
+  padding: 1pc;
+}
+.logoGTA{
+  width: 10pc;
+}
+.items_R {
+  width: 480px;
+  height: 240px;
+  background-color: red;
+  min-width: 30pc;
+}
+::-webkit-scrollbar{
+  display: none;
+}
